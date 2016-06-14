@@ -1,8 +1,8 @@
 import random
 
 class Ngram:
-    def __init__(self, doc):
-        self.N = 3
+    def __init__(self, doc, n=2):
+        self.N = n
         self.wordlist(doc)
         self.make_db()
 
